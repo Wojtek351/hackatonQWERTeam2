@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bi8vf2gqq5bhc"
+path="res://.godot/imported/starszy Pan.dialogue-e4cc457939535ed1dd3e09be315c7f64.tres"
+
+[deps]
+
+source_file="res://dialogi/starszy Pan.dialogue"
+dest_files=["res://.godot/imported/starszy Pan.dialogue-e4cc457939535ed1dd3e09be315c7f64.tres"]
+
+[params]
+
+defaults=true

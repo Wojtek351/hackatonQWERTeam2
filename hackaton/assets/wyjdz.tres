@@ -1,0 +1,74 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://caf6id2yvxhjx"]
+
+[ext_resource type="FontFile" uid="uid://cjptq7mck2pxr" path="res://assets/Minecraft.ttf" id="1_k16mr"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s20bs"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_efuvq"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.542403, 0, 0.102996, 1)
+border_width_bottom = 5
+border_color = Color(0.407228, 0, 0.0672461, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(0.259976, 4.51226e-08, 0.0291766, 1)
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5h55"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.627609, 0, 0.127128, 1)
+border_width_bottom = 5
+border_color = Color(0.471269, 0, 0.0841828, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(0.305147, 0, 0.0402458, 1)
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qkypn"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 2.0
+bg_color = Color(0.156863, 0.470588, 0.713726, 1)
+border_width_bottom = 5
+border_color = Color(0.0784314, 0.27451, 0.588235, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+expand_margin_left = 3.0
+expand_margin_top = 3.0
+expand_margin_right = 3.0
+expand_margin_bottom = 3.0
+shadow_color = Color(0.0196078, 0.137255, 0.231373, 1)
+shadow_size = 3
+shadow_offset = Vector2(2, 2)
+
+[resource]
+default_font = ExtResource("1_k16mr")
+default_font_size = 15
+Button/styles/focus = SubResource("StyleBoxFlat_s20bs")
+Button/styles/hover = SubResource("StyleBoxFlat_efuvq")
+Button/styles/normal = SubResource("StyleBoxFlat_s5h55")
+Button/styles/pressed = SubResource("StyleBoxFlat_qkypn")

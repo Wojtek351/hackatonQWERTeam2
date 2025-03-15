@@ -1,0 +1,23 @@
+~ start
+if check.give_portfel==false
+	if check.check_portfel==false and check.babka==false
+		Ty: Przepraszam czy coś sie stało?
+		set check.babka=true
+		NPC: Przepraszam bardzo, młodzieńcze, nie widziałeś przypadkiem mojego portfela? Zgubiłam go gdzieś tutaj, a już nie mam sił go szukać...
+		NPC: Może mógłbyś się rozejrzeć po bazylice i mi go przynieść, jeśli go znajdziesz?
+		- Oczywiście, poszukam go dla pani. Może gdzieś się zawieruszył.
+			NPC:  Och, dziękuję ci, chłopcze! Niech ci Bóg wynagrodzi.
+		- Przykro mi, ale nie mam teraz czasu.
+			NPC: Ach, rozumiem. No cóż, mam nadzieję, że ktoś inny mi pomoże. => END
+	elif check.check_portfel==false and check.babka==true
+		NPC: Och, to znowu ty! Zmieniłeś zdanie?
+		Ty: Tak, jednak pomogę Pani znaleźć ten portfel.
+		NPC:  Naprawdę? Dziękuję ci! To dla mnie bardzo ważne. Rozejrzyj się dobrze, może leży gdzieś pod ławką albo w pobliżu świecznika.
+	elif check.check_portfel==true and check.babka==true
+		Ty: Proszę, znalazłem pani portfel. Był niedaleko ławek w bazylice.
+		NPC: Naprawdę?! Och, chłopcze, nawet nie wiesz, jak bardzo mi ulżyło! Już myślałam, że przepadł na zawsze!
+		Ty: Na szczęście nie. Dobrze, że udało się go znaleźć.
+		NPC: Niech cię Bóg błogosławi, młodzieńcze. I uważaj na siebie!
+else
+	=> END
+=> END

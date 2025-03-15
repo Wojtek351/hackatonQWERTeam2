@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://lfp8rsgrkr7b"]
+
+[ext_resource type="Script" path="res://script/portfel.gd" id="1_dbi60"]
+[ext_resource type="Texture2D" uid="uid://dw26hh2fwl5d6" path="res://assets/portfel_sprite-01.png" id="2_fcr05"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n4aj4"]
+radius = 35.0
+
+[node name="portfel" type="StaticBody2D"]
+script = ExtResource("1_dbi60")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.484375, 0.535362)
+texture = ExtResource("2_fcr05")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_n4aj4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

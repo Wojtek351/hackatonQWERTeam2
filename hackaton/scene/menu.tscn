@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://cu82b5l1l4on3"]
+
+[ext_resource type="Texture2D" uid="uid://74dfhgwxopeg" path="res://assets/background.jpg" id="1_egoxx"]
+[ext_resource type="FontFile" uid="uid://cjptq7mck2pxr" path="res://assets/Minecraft.ttf" id="1_ekabt"]
+[ext_resource type="Theme" uid="uid://dklqlpuiud3cu" path="res://assets/graj.tres" id="1_wutbe"]
+[ext_resource type="Script" path="res://script/graj.gd" id="2_oercf"]
+[ext_resource type="Theme" uid="uid://dd3j687fp5lt1" path="res://assets/opcje.tres" id="3_qy4u8"]
+[ext_resource type="Theme" uid="uid://caf6id2yvxhjx" path="res://assets/wyjdz.tres" id="5_ppkgt"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1204.0
+offset_bottom = 1206.0
+scale = Vector2(0.955067, 0.5381)
+texture = ExtResource("1_egoxx")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 502.0
+offset_top = 265.0
+offset_right = 577.0
+offset_bottom = 348.0
+scale = Vector2(1.8, 1.52)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 11
+
+[node name="Graj" type="Button" parent="MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme = ExtResource("1_wutbe")
+theme_override_font_sizes/font_size = 15
+text = "Graj!"
+script = ExtResource("2_oercf")
+
+[node name="Opcje" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_qy4u8")
+theme_override_fonts/font = ExtResource("1_ekabt")
+theme_override_font_sizes/font_size = 15
+text = "Opcje"
+script = ExtResource("2_oercf")
+
+[node name="Wyjdź" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_ppkgt")
+theme_override_fonts/font = ExtResource("1_ekabt")
+theme_override_font_sizes/font_size = 15
+text = "Wyjdz"
+script = ExtResource("2_oercf")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Graj" to="MarginContainer/VBoxContainer/Graj" method="graj_on_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Opcje" to="MarginContainer/VBoxContainer/Graj" method="opcje_on_opcje_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Wyjdź" to="MarginContainer/VBoxContainer/Graj" method="_on_wyjdź_pressed"]

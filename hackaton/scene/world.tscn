@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://vh1e6vl7qhgp"]
+
+[ext_resource type="PackedScene" uid="uid://bnhxdnwcxwsdm" path="res://scene/player.tscn" id="1_pwkm7"]
+[ext_resource type="PackedScene" path="res://scene/portfel.tscn" id="2_auln0"]
+
+[node name="world" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_pwkm7")]
+position = Vector2(0, -2)
+
+[node name="Camera2D2" type="Camera2D" parent="player"]
+position = Vector2(3, 4)
+zoom = Vector2(2.5, 2.5)
+
+[node name="portfel" parent="." instance=ExtResource("2_auln0")]
+position = Vector2(90, 33)

@@ -1,0 +1,16 @@
+~ start
+if check.Pan==false and check.Pan_check==false
+	set check.Pan=true
+	Starszy Pan : Ta głowa była projektowana przez mojego Wujka Mariusza Kulpę. Słyszałem, że taka sama figura jest w pobliskim Liceum. Czy mógłbyś sprawdzić czy to prawda?
+	- Okej, sprawdzę to i wrócę,
+		Starszy Pan : Dziękuję. 
+		Gra: Podejdź pod mapę aby udać się do liceum. 
+	- Nie jestem teraz w stanie tego zrobić
+		Starszy Pan : Ach, rozumiem… młodzi dziś nie mają czasu na takie rzeczy. No cóż, może kiedyś zmienisz zdanie.
+elif check.Pan==true and check.Pan_check==false
+	Starszy Pan:  O, to znowu ty! Zmieniłeś zdanie? Czyli jednak sprawdzisz tę figurę? Dziękuje bardzo.
+	- Okej, sprawdzę to i wrócę
+		Starszy Pan: Dziękuję.
+	- Nie jestem teraz w stanie tego zrobić
+		Starszy Pan:  Myślałem, że zmieniłeś zdanie… No cóż, może innym razem.
+=> END

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://3hfficfifgjm"
+path="res://.godot/imported/statuła.dialogue-060518c6527aaee9589a30350a98a95b.tres"
+
+[deps]
+
+source_file="res://dialogi/statuła.dialogue"
+dest_files=["res://.godot/imported/statuła.dialogue-060518c6527aaee9589a30350a98a95b.tres"]
+
+[params]
+
+defaults=true

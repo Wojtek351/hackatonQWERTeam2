@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dkrfboi6tn6xu"
+path="res://.godot/imported/Opiekun.dialogue-a7726ae7f956be9f4ef14709e3aa0ce4.tres"
+
+[deps]
+
+source_file="res://dialogi/Opiekun.dialogue"
+dest_files=["res://.godot/imported/Opiekun.dialogue-a7726ae7f956be9f4ef14709e3aa0ce4.tres"]
+
+[params]
+
+defaults=true

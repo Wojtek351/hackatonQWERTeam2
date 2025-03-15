@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://qj1vmqfr2ahc"]
+
+[ext_resource type="Texture2D" uid="uid://cbam2mykh07lm" path="res://assets/overworld_map.png" id="1_57x53"]
+[ext_resource type="Texture2D" uid="uid://dko5cuvgvmayb" path="res://assets/mapThumbs/ZST.png" id="2_6xvgi"]
+[ext_resource type="Script" path="res://script/mapZst.gd" id="3_5qy4d"]
+[ext_resource type="Texture2D" uid="uid://cx5ul7mokfnwi" path="res://assets/mapThumbs/ZSL.png" id="3_30weh"]
+[ext_resource type="Texture2D" uid="uid://besmijr2j63sp" path="res://assets/mapThumbs/klasztor.png" id="4_36bmo"]
+[ext_resource type="Script" path="res://script/mapZsl.gd" id="5_yef6l"]
+[ext_resource type="Script" path="res://scene/mapKlasztor.gd" id="7_ppbhu"]
+[ext_resource type="Texture2D" uid="uid://dw7sve0o3l6pk" path="res://assets/mapThumbs/rynek.png" id="8_q1cxq"]
+[ext_resource type="Texture2D" uid="uid://dyeimuke6mqlo" path="res://assets/mapThumbs/muzeum.png" id="9_4ckkj"]
+[ext_resource type="Script" path="res://script/mapRynek.gd" id="9_vfjdh"]
+[ext_resource type="Script" path="res://script/mapMuzeum.gd" id="11_sp8rt"]
+
+[node name="mapa" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -2443.0
+offset_top = -1741.0
+offset_right = -1291.0
+offset_bottom = -1093.0
+scale = Vector2(5.37208, 6.61044)
+color = Color(0.125911, 0.125911, 0.125911, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="StaticBody2D"]
+position = Vector2(576, 324)
+rotation = -3.14159
+scale = Vector2(658.799, -284.497)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(579, 325)
+scale = Vector2(0.938816, 0.938816)
+texture = ExtResource("1_57x53")
+
+[node name="zst" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="zst"]
+position = Vector2(700, 259)
+scale = Vector2(0.46, 0.46)
+texture = ExtResource("2_6xvgi")
+script = ExtResource("3_5qy4d")
+
+[node name="zsl" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="zsl"]
+position = Vector2(584, 256)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_30weh")
+script = ExtResource("5_yef6l")
+
+[node name="klasztor" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="klasztor"]
+position = Vector2(569, 149)
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("4_36bmo")
+script = ExtResource("7_ppbhu")
+
+[node name="rynek" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="rynek"]
+position = Vector2(715, 477)
+scale = Vector2(0.219062, 0.219062)
+texture = ExtResource("8_q1cxq")
+script = ExtResource("9_vfjdh")
+
+[node name="muzeum" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="muzeum"]
+position = Vector2(794, 363)
+scale = Vector2(0.219062, 0.219062)
+texture = ExtResource("9_4ckkj")
+script = ExtResource("11_sp8rt")
